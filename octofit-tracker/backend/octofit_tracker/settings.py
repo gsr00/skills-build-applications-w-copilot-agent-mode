@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'corsheaders',
     'rest_framework',
+    'octofit_tracker',  # Adding the main app
 ]
 
 MIDDLEWARE = [
@@ -77,7 +78,8 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# Add Djongo as the database engine
+# Database configuration added by GitHub Copilot agent mode
+# Using Djongo as the database engine for MongoDB integration
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
